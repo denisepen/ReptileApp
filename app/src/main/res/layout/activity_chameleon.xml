@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.reptileapp.ChameleonActivity">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/button5"
+        android:layout_alignParentTop="true"
+        android:onClick="goHome"
+        android:outlineProvider="bounds"
+        android:layout_marginLeft="275dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_green_dark">
+
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Chameleons"
+        android:id="@+id/textView7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="50sp" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView7"
+    android:layout_above="@+id/linearLayout35"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView19"
+            android:src="@drawable/chameleon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chameleons are reptiles that are actually a type of iguana . These colorful lizards are known as one of the few animals that can change skin color. However, it is a misconception that chameleons change colors to match their surroundings."
+            android:id="@+id/textView44"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unlike other animals, chameleons continue to grow throughout their lives. As their old skin gets too small, they will shed it in bits and pieces, dissimilar to snakes that shed their skin all at once."
+            android:id="@+id/textView45"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView20"
+            android:src="@drawable/chameleon3"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Changing skin color is an important part of communication among chameleons. According to the San Diego Zoo, a chameleon&apos;s skin changes colors in response to its emotions, such as anger or fear, changes in light, temperature or humidity.  The brighter the color, the more dominant the male is, and the more attractive he is to females. A submissive male is usually brown or gray. Females use their colors to accept or reject a suitor, and their color can also indicate that she is pregnant.  A new study has found that chameleons can rapidly change color by adjusting special cells, called iridophore cells, in each layer. The chameleons can change the structural arrangement of the upper cell layer by relaxing or exciting the skin, which leads to a change in color, researchers found. "
+            android:id="@+id/textView47"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView21"
+            android:src="@drawable/chameleon2"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Size"
+            android:id="@+id/textView46"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="There are 171 species of chameleons. With so many different species, there are many different sizes.   smallest chameleon The largest chameleon is the Parson’s chameleon, according to Encyclopedia Britannica. It can grow up to 27 inches (69.5 centimeters) long. The Madagascan, also known as the Oustalet&apos;s chameleon, is also very large and grows up to 23 inches (60 cm) long."
+            android:id="@+id/textView68"
+            android:textSize="25sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Habitat"
+            android:id="@+id/textView48"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chameleons live in Madagascar, Africa, Spain, Portugal and Asia in rain forests, savannas, semi-deserts and steppes, according to the San Diego Zoo. They typically stay in trees or bushes, though some species do live on the ground. For example, the horned leaf chameleon lives in dead leaves on forest floors according to the National Wildlife Federation. "
+            android:id="@+id/textView49"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diet"
+            android:id="@+id/textView50"
+            android:textIsSelectable="false"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chameleons eat insects and birds. To catch their prey, they creep along very slowly. Once the prey is in reach, their suction cup tongue shoots out and sticks to the insect. Their tongues can be as twice as long as their bodies when stretched out to catch prey, according to Encyclopedia Britannica. The insect is drawn back into the lizard&apos;s mouth to be digested by strong stomach acids.   Water is very important to chameleon growth and health. They either slurp water up using their tongues or the inhale it."
+            android:id="@+id/textView51"
+            android:textSize="25sp" />
+    </LinearLayout>
+</ScrollView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout35"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="More Chameleon Info"
+            android:id="@+id/button9"
+            android:layout_alignTop="@+id/button8"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="chameleonWiki"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/holo_green_dark"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="New Animal: Iguana"
+            android:id="@+id/button8"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="iguanaPage"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/holo_green_dark"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

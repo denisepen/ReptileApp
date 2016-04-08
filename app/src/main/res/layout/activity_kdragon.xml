@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.reptileapp.KDragonActivity">
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/button5"
+        android:layout_alignParentTop="true"
+        android:onClick="goHome"
+        android:outlineProvider="bounds"
+        android:layout_marginLeft="275dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_green_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Komodo Dragons"
+        android:id="@+id/textView5"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/button5"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button5"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/linearLayout9">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id = "@+id/linearLayout10"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:layout_width="137dp"
+            android:layout_height="match_parent"
+            android:text="More Komodo Dragon Info"
+            android:id="@+id/button9"
+            android:layout_alignTop="@+id/button8"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="kdragonWiki"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:layout_width="137dp"
+            android:layout_height="match_parent"
+            android:text="Finished"
+            android:id="@+id/button8"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="congratsPage"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below = "@+id/linearLayout9"
+    android:layout_above = "@+id/linearLayout10"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id = "@+id/linearLayout11"
+        android:layout_below = "@+id/linearLayout9"
+        android:layout_above = "@+id/linearLayout10"
+       >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/imageView17"
+            android:layout_below="@+id/textView5"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/kdragon"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Komodo dragons are the largest living lizards in the world. They are identified by their massive size, flat heads, bowed legs and long, thick tails. The name comes from rumors that a dragon-like creature lived on the Indonesian island of Komodo."
+            android:id="@+id/textView36"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size"
+            android:id="@+id/textView38"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The average size of a male Komodo dragon is 8 to 9 feet and about 200 lbs., according to the Smithsonian National Zoological Park, but they can reach a whopping 10 feet (3 meters) in length. Females grow to 6 feet (1.8 m).   Komodos come in a variety of colors, including blue, orange, green and gray. Their skin is rough and durable, reinforced with bony plates called osteoderms. They have long claws and a large, muscular tail."
+            android:id="@+id/textView37"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:layout_weight="0.63" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Habitat"
+            android:id="@+id/textView39"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Komodos are very rare and are found in the wild only on five islands: the Lesser Sunda Islands of Komodo, Rinca, Gili Montang and Gili Dasami — all within Komodo National Park — and the island of Flores, where the Komodo roams freely.   The lizard&apos;s habitat can be anything from a tropical dry forest to a savanna to a deciduous monsoon forest. No matter where they live, the Komodo likes extreme heat."
+            android:id="@+id/textView40"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView18"
+            android:src="@drawable/kdragon2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diet"
+            android:id="@+id/textView41"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Komodo dragons are carnivores, meaning they eat meat. They are such fierce hunters they can eat very large prey, such as large water buffalo, deer, carrion, pigs and even humans. They will also eat smaller dragons. They can eat 80 percent of their body weight in one feeding. "
+            android:id="@+id/textView42"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Komodo has a unique way of killing its prey. First, it springs up and knocks the prey over with its huge feet. Then they use their sharp, serrated teeth — which are a lot like a shark&apos;s — to shred their prey to death. If the prey escapes, it will die within 24 hours of blood poisoning because the Komodo&apos;s saliva contains 50 strains of bacteria, according to National Geographic. With its fantastic sense of smell, the Komodo will find the dead animal and finish its meal. "
+            android:id="@+id/textView43"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+</RelativeLayout>

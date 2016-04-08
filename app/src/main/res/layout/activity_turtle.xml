@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.reptileapp.TurtleActivity">
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/button5"
+        android:layout_alignParentTop="true"
+        android:onClick="goHome"
+        android:outlineProvider="bounds"
+        android:layout_marginLeft="275dp"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/holo_green_dark" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Turtles"
+        android:id="@+id/textView10"
+        android:layout_alignParentTop="false"
+        android:typeface="normal"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:id ="@+id/linearLayout5"
+        android:layout_below="@id/textView10"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView10"
+            android:src="@drawable/turtle3"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView11"
+            android:src="@drawable/tortoise"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView12"
+            android:src="@drawable/tortoise3"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id ="@+id/linearLayout30"
+        android:layout_marginTop="15dp"
+        android:gravity="bottom">
+
+       >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More Turtle Info"
+        android:id="@+id/button9"
+        android:onClick="turtleWiki"
+        android:background="@android:color/holo_green_dark"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Animal: Snake"
+        android:id="@+id/button8"
+        android:onClick="snakePage"
+        android:background="@android:color/holo_green_dark"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp" />
+
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id = "@+id/scrollView6"
+    android:layout_below="@id/linearLayout5"
+    android:layout_above="@+id/linearLayout30"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/linearLayout5">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turtles are reptiles with hard shells that protect them from predators. They are among the oldest and most primitive groups of reptiles, having evolved millions of years ago. Turtles live all over the world in almost every type of climate. "
+            android:id="@+id/textView23"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turtle,&quot; &quot;tortoise&quot; and &quot;terrapin&quot; are often used interchangeably as synonyms, but there are distinct differences between them."
+            android:id="@+id/textView25"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turtles spend most of their lives in water. They are adapted for aquatic life, with webbed feet or flippers and a streamlined body. Sea turtles rarely leave the ocean, except to lay eggs in the sand. Freshwater turtles live in ponds and lakes, and they climb out of the water onto logs or rocks to bask in the warm sun."
+            android:id="@+id/textView22"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tortoises are land animals. Their feet are round and stumpy, adapted for walking on land. They also dig burrows with their strong forelimbs, and slip underground when the sun gets too hot."
+            android:id="@+id/textView24"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A turtle&apos;s shell is a modified ribcage. The shell is made up of about 60 bones that are covered by plates called scutes. Scutes are made of keratin, the same material that makes up humans&apos; fingernails.  Many turtles are able to retract their heads and feet into their shells. Turtles are placed in the two suborders based on the method of retraction, according to ADW. Pleurodires pull their heads in sideways; cryptodires draw their heads straight back into the shell. Sea turtles have lost the ability to retract their heads."
+            android:id="@+id/textView27"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Size"
+            android:id="@+id/textView56"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="With so many different types of turtle, there is no average size. The largest sea turtle species is the leatherback turtle. It weighs 600 to 1,500 lbs. (272 to 680 kilograms) and is about 4.5 to 5.25 feet (139 to 160 centimeters) long, according to the World Wildlife Federation (WWF). The Galápagos tortoise grows up to 6 feet (183 cm) long and 573 lbs. (260 kg), according to the San Diego Zoo. The largest freshwater turtle in North America is the alligator snapping turtle. It can grow to 2.5 feet (80 cm) long and weigh as much as 200 lbs. (91 kg). The Yangtze giant softshell turtle is the largest softshell turtle. It measures up to 3.6 feet (1 m) across, and weigh up to 309 lbs. (140 kg)."
+            android:id="@+id/textView26"
+            android:layout_marginBottom="5dp"
+            android:textSize="25sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diet"
+            android:id="@+id/textView57"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Some turtles are carnivores, while others follow a strictly vegetarian diet. Most turtles, however, are omnivores, eating both animals and plants.  What a turtle eats depends on its species — specifically, what kind of jaw it has for masticating (chewing) food, where it lives and what food sources are available to it. Sea turtles, depending on the species, may eat seagrasses, algae, sponges, sea squirts, squid, shrimp, crabs, jellyfish, cuttlefish or sea cucumbers. For instance, leatherback sea turtles (Dermochelys coriacea), which can reach a whopping 1,100 pounds (500 kilograms) use their scissorlike jaws to munch on a jellyfish-only diet, according to the Sea Turtle Conservancy. Green sea turles (Chelonia myadis), on the other hand, are herbivores that feed on algae and seagrasses."
+            android:id="@+id/textView58"
+            android:textSize="25sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A freshwater turtle&apos;s diet is just as varied and may include worms, snails, insect larvae, aquatic insects, crustaceans, water plants, algae and fallen fruit. Some species of freshwater turtles, such as snapping turtles, also eat small mammals, frogs, snakes, fish and even other, smaller turtles, according to Connecticut&apos;s Department of Energy and Environmental Protection.  Terrestrial turtles also eat a variety of foods, from earthworms, grubs, snails, beetles and caterpillars to grasses, fruit, berries, mushrooms and flowers. Both aquatic and land turtles have been known to eat carrion (decaying flesh) when it&apos;s available."
+            android:id="@+id/textView59"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Habitat"
+            android:id="@+id/textView60"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turtles inhabit virtually every terrestrial, aquatic and marine habitat in the world that is warm enough to permit activity. Turtles are residents of every continent except Antarctica and of all the world’s temperate and tropical oceans."
+            android:id="@+id/textView61"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The 327 living turtle species exhibit remarkable diversity, and they have colonized most available habitats. Some species live in deserts, while others live in rainforests, temperate forests, grasslands, lakes, ponds, rivers, swamps and coral reefs. Some turtles, particularly the wide-ranging sea turtles, have huge ranges that span thousands of miles. By contrast, some species inhabit only a small geographic area or a particular body of water. Some of the areas with extraordinary diversity include the rivers, lakes and streams of the southeastern United States, the rainforests of Southeast Asia, central Africa and the Amazon basin. The Galapagos Islands are home to the largest terrestrial species, Chelonoidis nigra, while southern Africa is home to the smallest species, Homopus signatus."
+            android:id="@+id/textView62"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>
